@@ -1,0 +1,9 @@
+1. Open up Editor.exe, found in emedit-editor-beta-windows.
+
+2. When it's opened, click the three bars at the top near "Recent projects".
+
+3. Click preferences, scroll to the bottom, and then click on GML dialects directory.
+
+4. You should now be in a folder called "api" found in your Roaming AppData folder. Drag and drag the roa folder into there.
+
+5. Reload GMEdit
