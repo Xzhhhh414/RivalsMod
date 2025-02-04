@@ -115,7 +115,7 @@ if (attack== AT_BAIR){
 	}
 
 }
-
+/*
 if (attack == AT_NSPECIAL){
 	if (has_hit==true){
 		hit_player_obj.x = x +50*spr_dir;
@@ -131,9 +131,8 @@ if (attack == AT_NSPECIAL){
 		window=3;
 		window_timer = 0;
 	}
-
-
 }
+*/
 
 if (attack == AT_DSPECIAL){
 	was_parried = false;
