@@ -6,7 +6,7 @@ hitstun_hurtbox_spr = -1;
 
 char_height = 54;
 idle_anim_speed = 0.2;
-crouch_anim_speed = .1;
+crouch_anim_speed = .15;
 walk_anim_speed = 0.38;
 dash_anim_speed = .2;
 pratfall_anim_speed = .25;
@@ -14,14 +14,14 @@ pratfall_anim_speed = .25;
 walk_speed = 4.5;
 walk_accel = 0.45;
 walk_turn_time = 6;
-initial_dash_time = 14;
+initial_dash_time = 10;
 initial_dash_speed = 12;
-dash_speed = 9;
+dash_speed = 10;
 dash_turn_time = 10;
-dash_turn_accel = 2;
-dash_stop_time = 4;
-dash_stop_percent = .35; //the value to multiply your hsp by when going into idle from dash or dashstop
-ground_friction = .5;
+dash_turn_accel = 1;
+dash_stop_time = 5;
+dash_stop_percent = 0; //the value to multiply your hsp by when going into idle from dash or dashstop
+ground_friction = 0.85;
 moonwalk_accel = 1.4;
 
 jump_start_time = 5;
@@ -54,8 +54,8 @@ wave_friction = .04; //grounded deceleration when wavelanding
 
 //crouch animation frames
 crouch_startup_frames = 1;
-crouch_active_frames = 1;
-crouch_recovery_frames = 1;
+crouch_active_frames = 7;
+crouch_recovery_frames = 4;
 
 //parry animation frames
 dodge_startup_frames = 1;

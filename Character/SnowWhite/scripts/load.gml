@@ -1,12 +1,12 @@
 sprite_change_offset("idle", 98, 125);
 sprite_change_offset("hurt", 98, 125);
-sprite_change_offset("crouch", 55, 89);//lack
+sprite_change_offset("crouch", 98, 125);
 sprite_change_offset("walk", 98, 125);
 sprite_change_offset("walkturn", 98, 125);
-sprite_change_offset("dash", 43, 70);//lack
-sprite_change_offset("dashstart", 48, 89);//lack
-sprite_change_offset("dashstop", 48, 89);//lack
-sprite_change_offset("dashturn", 66, 71);//lack 
+sprite_change_offset("dash", 98, 125);
+sprite_change_offset("dashstart", 98, 125);
+sprite_change_offset("dashstop", 98, 125);
+sprite_change_offset("dashturn", 98, 125);
 
 sprite_change_offset("jumpstart", 98, 125);
 sprite_change_offset("jump", 98, 125);
@@ -16,7 +16,7 @@ sprite_change_offset("pratfall", 98, 125);
 sprite_change_offset("land", 98, 125);
 sprite_change_offset("landinglag", 98, 125);
 
-sprite_change_offset("parry", 98, 125);//temp
+sprite_change_offset("parry", 98, 125);
 sprite_change_offset("roll_forward", 98, 125);
 sprite_change_offset("roll_backward", 98, 125);
 sprite_change_offset("airdodge", 98, 125);//temp
