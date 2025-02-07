@@ -102,7 +102,7 @@ if (attack== AT_FSTRONG_2){
 
 }
 */
-
+/*
 if (attack== AT_BAIR){
 	if (window ==1 && window_timer==10){
 		sprite_change_offset("bair", 62, 127);
@@ -115,6 +115,7 @@ if (attack== AT_BAIR){
 	}
 
 }
+*/
 /*
 if (attack == AT_NSPECIAL){
 	if (has_hit==true){
