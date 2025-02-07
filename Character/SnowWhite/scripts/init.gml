@@ -18,9 +18,9 @@ initial_dash_time = 10;
 initial_dash_speed = 12;
 dash_speed = 10;
 dash_turn_time = 10;
-dash_turn_accel = 1;
+dash_turn_accel = 5;
 dash_stop_time = 5;
-dash_stop_percent = 0; //the value to multiply your hsp by when going into idle from dash or dashstop
+dash_stop_percent = 0.35; //the value to multiply your hsp by when going into idle from dash or dashstop
 ground_friction = 0.85;
 moonwalk_accel = 1.4;
 
@@ -73,10 +73,10 @@ techroll_recovery_frames = 2;
 techroll_speed = 10;
 
 //airdodge animation frames
-air_dodge_startup_frames = 1;
-air_dodge_active_frames = 2;
-air_dodge_recovery_frames = 3;
-air_dodge_speed = 7.5;
+air_dodge_startup_frames = 2;
+air_dodge_active_frames = 4;
+air_dodge_recovery_frames = 6;
+air_dodge_speed = 6.5;
 
 //roll animation frames
 roll_forward_startup_frames = 2;

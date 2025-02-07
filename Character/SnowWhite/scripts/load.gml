@@ -19,7 +19,7 @@ sprite_change_offset("landinglag", 98, 125);
 sprite_change_offset("parry", 98, 125);
 sprite_change_offset("roll_forward", 98, 125);
 sprite_change_offset("roll_backward", 98, 125);
-sprite_change_offset("airdodge", 98, 125);//temp
+sprite_change_offset("airdodge", 98, 125);
 sprite_change_offset("waveland", 98, 125);
 sprite_change_offset("tech", 98, 125);
 
@@ -28,9 +28,9 @@ jab2 = asset_get( "jab2" );
 sprite_change_offset("jab2",98, 125)
 
 sprite_change_offset("dattack", 98, 125);
-sprite_change_offset("ftilt", 98, 125);//temp
+sprite_change_offset("ftilt", 98, 125);
 sprite_change_offset("dtilt", 98, 125);
-sprite_change_offset("utilt", 50, 153);//lack
+sprite_change_offset("utilt", 98, 125);
 sprite_change_offset("nair", 75, 97);//lack
 sprite_change_offset("fair", 98, 125);
 sprite_change_offset("bair", 113, 127);//lack
