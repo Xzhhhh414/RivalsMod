@@ -102,20 +102,41 @@ if (attack== AT_FSTRONG_2){
 
 }
 */
-/*
-if (attack== AT_BAIR){
-	if (window ==1 && window_timer==10){
-		sprite_change_offset("bair", 62, 127);
-		spr_dir *= -1
-	}
-	else{
-		if (window==1 && window_timer < 10){
-			sprite_change_offset("bair", 113, 127);
+if (attack== AT_UAIR){
+	if (window ==2 && window_timer >=18){
+		if(jump_pressed == true && (max_djumps-djumps)>0){
+			set_state(PS_DOUBLE_JUMP);
+			//print_debug( "candjump");			
+			//print_debug( "max_djumps="+string(max_djumps));
+			//print_debug( "djumps="+string(djumps));
 		}
 	}
-
 }
-*/
+
+if (attack== AT_NAIR){
+	if (window ==2 && window_timer >=15){
+		if(jump_pressed == true && (max_djumps-djumps)>0){
+			set_state(PS_DOUBLE_JUMP);
+		}
+	}
+}
+
+if (attack== AT_BAIR){
+	if (window ==2 && window_timer >=20){
+		if(jump_pressed == true && (max_djumps-djumps)>0){
+			set_state(PS_DOUBLE_JUMP);
+		}
+	}
+}
+
+if (attack== AT_DAIR){
+	if (window ==2 && window_timer >=15){
+		if(jump_pressed == true && (max_djumps-djumps)>0){
+			set_state(PS_DOUBLE_JUMP);
+		}
+	}
+}
+
 /*
 if (attack == AT_NSPECIAL){
 	if (has_hit==true){

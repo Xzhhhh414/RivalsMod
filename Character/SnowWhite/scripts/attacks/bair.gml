@@ -20,6 +20,7 @@ set_window_value(AT_BAIR, 2, AG_WINDOW_ANIM_FRAME_START, 7);
 
 set_num_hitboxes(AT_BAIR, 1);
 
+set_hitbox_value(AT_DAIR, 1, HG_HITBOX_TYPE, 1);
 set_hitbox_value(AT_BAIR, 1, HG_WINDOW, 1);
 set_hitbox_value(AT_BAIR, 1, HG_WINDOW_CREATION_FRAME, 10);
 set_hitbox_value(AT_BAIR, 1, HG_LIFETIME, 4);
