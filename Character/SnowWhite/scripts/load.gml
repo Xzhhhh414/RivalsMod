@@ -40,7 +40,7 @@ sprite_change_offset("fstrong", 98, 125);
 sprite_change_offset("ustrong", 53, 145);//lack
 sprite_change_offset("dstrong", 100, 92);//lack
 
-sprite_change_offset("nspecial", 98, 125);//lack
+sprite_change_offset("nspecial", 98, 125);
 //sprite_change_offset("nspecial2",45, 113);
 
 sprite_change_offset("fspecial", 62, 100);//lack

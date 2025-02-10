@@ -3,14 +3,6 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL || a
     trigger_b_reverse();
 }
 
-if (attack == AT_NSPECIAL){
-    if (window == 3){
-        if (special_pressed){
-            window = 1;
-            window_timer = 0;
-        }
-    }
-}
 
 if (attack == AT_FSPECIAL){
     if (window == 2){
