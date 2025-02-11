@@ -1,32 +1,6 @@
 //B - Reversals
-if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL || attack == AT_USPECIAL){
+if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR || attack == AT_DSPECIAL || attack == AT_USPECIAL){
     trigger_b_reverse();
-}
-
-
-if (attack == AT_FSPECIAL){
-    if (window == 2){
-        if (window_timer == 19){
-            x += 12*spr_dir;
-        }
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_FSPECIAL_2;
-			window=0;
-			window_timer=0;
-		}
-    }
-}
-
-if (attack == AT_FSPECIAL_2){
-    if (window == 2){
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_EXTRA_1;
-			window=0;
-			window_timer=0;
-		}
-    }
 }
 
 if (attack == AT_EXTRA_1){
@@ -39,31 +13,6 @@ if (attack == AT_EXTRA_1){
 		}
     }
 }
-
-if (attack == AT_FSPECIAL_AIR){
-	if (window==1 && window_timer==1){
-		y -=20
-	}
-    if (window == 2){
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_FSPECIAL_2;
-			window=0;
-			window_timer=0;
-		}
-    }
-}
-
-
-
-if (attack == AT_DSPECIAL){
-    if (window == 2 && !was_parried){
-        can_jump = true;
-    }
-    can_fast_fall = false;
-    can_move = false
-}
-
 
 if (attack == AT_JAB){
 	if (window_timer >9 && window_timer <18){
@@ -129,24 +78,48 @@ if (attack== AT_DAIR){
 	}
 }
 
-/*
-if (attack == AT_NSPECIAL){
-	if (has_hit==true){
-		hit_player_obj.x = x +50*spr_dir;
-		hit_player_obj.y = y
-	}
-	if (has_hit== true && window==2 && window_timer==8){
-		attack_end();
-		attack = AT_UTHROW;
-		window = 0;
-		window_timer = 0;
-	}
-	if (has_hit == false && window==2 &&window_timer >10){
-		window=3;
-		window_timer = 0;
-	}
+if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR){
+	can_fast_fall = false;
+	can_move = false;
 }
-*/
+
+if (attack == AT_FSPECIAL){
+    if (window == 2){
+        if (window_timer == 19){
+            x += 12*spr_dir;
+        }
+		if (special_pressed == true){
+			attack_end();
+			attack = AT_FSPECIAL_2;
+			window=0;
+			window_timer=0;
+		}
+    }
+}
+
+if (attack == AT_FSPECIAL_AIR){
+	if (window==1 && window_timer==1){
+		y -=20
+	}
+    if (window == 2){
+		if (special_pressed == true){
+			attack_end();
+			attack = AT_FSPECIAL_2;
+			window=0;
+			window_timer=0;
+		}
+    }
+}
+
+
+if (attack == AT_DSPECIAL){
+    if (window == 2 && !was_parried){
+        can_jump = true;
+    }
+    can_fast_fall = false;
+    can_move = false
+}
+
 
 if (attack == AT_DSPECIAL){
 	was_parried = false;

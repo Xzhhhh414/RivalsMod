@@ -41,13 +41,10 @@ sprite_change_offset("ustrong", 53, 145);//lack
 sprite_change_offset("dstrong", 100, 92);//lack
 
 sprite_change_offset("nspecial", 98, 125);
-//sprite_change_offset("nspecial2",45, 113);
+sprite_change_offset("nspecial_air",98, 125);
 
-sprite_change_offset("fspecial", 62, 100);//lack
-sprite_change_offset("fspecial2",30,92);
-sprite_change_offset("fspecial3",54,128);
-sprite_change_offset("fspecial4",53,139);
-sprite_change_offset("fspecialair",39,104);
+sprite_change_offset("fspecial", 98, 125);
+sprite_change_offset("fspecial_air",98,125);
 
 
 sprite_change_offset("uspecial", 78, 151);//lack
