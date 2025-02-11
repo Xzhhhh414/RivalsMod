@@ -84,31 +84,11 @@ if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR){
 }
 
 if (attack == AT_FSPECIAL){
-    if (window == 2){
-        if (window_timer == 19){
-            x += 12*spr_dir;
-        }
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_FSPECIAL_2;
-			window=0;
-			window_timer=0;
-		}
-    }
+
 }
 
 if (attack == AT_FSPECIAL_AIR){
-	if (window==1 && window_timer==1){
-		y -=20
-	}
-    if (window == 2){
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_FSPECIAL_2;
-			window=0;
-			window_timer=0;
-		}
-    }
+
 }
 
 
