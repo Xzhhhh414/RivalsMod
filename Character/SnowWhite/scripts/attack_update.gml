@@ -90,8 +90,14 @@ if (attack == AT_FSPECIAL){
 }
 
 if (attack == AT_FSPECIAL_AIR){
-		if (free==false){
+	if (free==false){
 		attack=AT_FSPECIAL;
+	}
+}
+
+if (attack == AT_USPECIAL){
+	if (window ==5 && free==false){
+		set_state(PS_LAND);
 	}
 }
 
