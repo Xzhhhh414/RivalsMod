@@ -47,7 +47,7 @@ sprite_change_offset("fspecial", 98, 125);
 sprite_change_offset("fspecial_air",98,125);
 
 
-sprite_change_offset("uspecial", 78, 151);//lack
+sprite_change_offset("uspecial", 98, 125);
 
 sprite_change_offset("dspecial", 43, 89);//lack
 sprite_change_offset("dspecial2",42, 98 );//lack

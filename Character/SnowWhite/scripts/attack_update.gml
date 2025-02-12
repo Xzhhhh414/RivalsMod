@@ -84,11 +84,15 @@ if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR){
 }
 
 if (attack == AT_FSPECIAL){
-
+	if (free==true){
+		attack=AT_FSPECIAL_AIR;
+	}
 }
 
 if (attack == AT_FSPECIAL_AIR){
-
+		if (free==false){
+		attack=AT_FSPECIAL;
+	}
 }
 
 
