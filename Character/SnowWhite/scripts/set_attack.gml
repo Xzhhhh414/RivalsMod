@@ -3,5 +3,9 @@ if (attack == AT_NSPECIAL && free==true){
 }
 
 if (attack == AT_FSPECIAL && free==true){
-	attack=AT_FSPECIAL_AIR;
+	attack = AT_FSPECIAL_AIR;
+}
+
+if (attack == AT_DSPECIAL && free==true){
+	attack = AT_DSPECIAL_AIR;
 }

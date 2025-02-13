@@ -3,16 +3,6 @@ if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR || attack == AT_DSPECIAL 
     trigger_b_reverse();
 }
 
-if (attack == AT_EXTRA_1){
-    if (window == 2){
-		if (special_pressed == true){
-			attack_end();
-			attack = AT_EXTRA_2;
-			window=0;
-			window_timer=0;
-		}
-    }
-}
 
 if (attack == AT_JAB){
 	if (window_timer >9 && window_timer <18){
@@ -96,49 +86,85 @@ if (attack == AT_FSPECIAL_AIR){
 }
 
 if (attack == AT_USPECIAL){
-	if (window ==5 && free==false){
+	if (window >=5 && free==false){
 		set_state(PS_LAND);
 	}
 }
 
 
 if (attack == AT_DSPECIAL){
-    if (window == 2 && !was_parried){
-        can_jump = true;
-    }
-    can_fast_fall = false;
     can_move = false
-}
-
-
-if (attack == AT_DSPECIAL){
 	was_parried = false;
-	if (has_hit==true){
+	if (has_hit==true && window ==2){
 		if (hit_player_obj.state == PS_ATTACK_AIR || hit_player_obj.state == PS_ATTACK_GROUND){
-			var sounder = random_func(1,3,true); 
+			/*var sounder = random_func(1,3,true); 
 			if (sounder == 1){
 				sound_play(sound_get("miketa"));
 			}
-			if(sounder==2){
+			else if(sounder==2){
 				sound_play(sound_get("saseru"));			
 			}
-			if(sounder==0){
+			else if(sounder==0){
 				sound_play(sound_get("sokoda"));			
-			}
+			}*/
+			
 			attack = AT_DSPECIAL_2;
 			window = 0;
-			window_timer = 0;
+			window_timer = 0;				
+
 			if (hit_player_obj.x > x){
 				spr_dir = 1
 			}
 			else{
 				spr_dir = -1
 			}
-		
 		}
-	
-	
 	}
+	if (window ==3 && free==true){
+		attack = AT_DSPECIAL_AIR;
+	}
+	
+	
+}
 
+if(attack == AT_DSPECIAL_AIR){
+    can_fast_fall = false;
+    can_move = false
+	was_parried = false;
+	if (has_hit==true && window ==2){
+		if (hit_player_obj.state == PS_ATTACK_AIR || hit_player_obj.state == PS_ATTACK_GROUND){
+			/*var sounder = random_func(1,3,true); 
+			if (sounder == 1){
+				sound_play(sound_get("miketa"));
+			}
+			else if(sounder==2){
+				sound_play(sound_get("saseru"));			
+			}
+			else if(sounder==0){
+				sound_play(sound_get("sokoda"));			
+			}*/
+			
+			//destroy_hitboxes();
+			attack = AT_EXTRA_1;
+			window = 0;
+			window_timer = 0;				
 
+			if (hit_player_obj.x > x){
+				spr_dir = 1
+			}
+			else{
+				spr_dir = -1
+			}
+		}
+	}	
+	if (window >=3 && free==false){
+		attack = AT_DSPECIAL;
+	}	
+
+}
+
+if(attack == AT_EXTRA_1){
+	if (window ==3 && free==false){
+		attack = AT_DSPECIAL_2;
+	}
 }

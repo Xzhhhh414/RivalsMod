@@ -49,11 +49,12 @@ sprite_change_offset("fspecial_air",98,125);
 
 sprite_change_offset("uspecial", 98, 125);
 
-sprite_change_offset("dspecial", 43, 89);//lack
-sprite_change_offset("dspecial2",42, 98 );//lack
+sprite_change_offset("dspecial", 98, 125);
+sprite_change_offset("dspecial2",98, 125 );
+sprite_change_offset("dspecial_air", 98, 125);
+sprite_change_offset("dspecial2_air",98, 125 );
 
+sprite_change_offset("taunt", 36, 152);//lack
 
-sprite_change_offset("taunt", 36, 152);
-
-sprite_change_offset("plat", 64, 94);
+sprite_change_offset("plat", 64, 94);//lack
 
