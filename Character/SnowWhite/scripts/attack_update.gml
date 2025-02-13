@@ -143,9 +143,9 @@ if(attack == AT_DSPECIAL_AIR){
 			else if(sounder==0){
 				sound_play(sound_get("sokoda"));			
 			}*/
-			
-			//destroy_hitboxes();
+
 			attack = AT_EXTRA_1;
+			attack_end(); //很关键……重置hitbox，虽然不知道为啥
 			window = 0;
 			window_timer = 0;				
 
