@@ -16,7 +16,7 @@ walk_accel = 0.45;
 walk_turn_time = 6;
 initial_dash_time = 10;
 initial_dash_speed = 8;
-dash_speed = 7.8;
+dash_speed = 7.5;
 dash_turn_time = 10;
 dash_turn_accel = 5;
 dash_stop_time = 5;
@@ -27,7 +27,7 @@ moonwalk_accel = 1.4;
 jump_start_time = 5;
 jump_speed = 11.5;
 short_hop_speed = 8;
-djump_speed = 11;
+djump_speed = 12;
 leave_ground_max = 6; //the maximum hsp you can have when you go from grounded to aerial without jumping
 max_jump_hsp = 6; //the maximum hsp you can have when jumping from the ground
 air_max_speed = 6; //the maximum hsp you can accelerate to when in a normal aerial state
@@ -38,7 +38,7 @@ air_friction = .04;
 max_djumps = 1;
 double_jump_time = 27; //the number of frames to play the djump animation. Can't be less than 31.
 walljump_hsp = 7;
-walljump_vsp = 8;
+walljump_vsp = 10;
 walljump_time = 32;
 max_fall = 13; //maximum fall speed without fastfalling
 fast_fall = 16; //fast fall speed
@@ -98,3 +98,7 @@ air_dodge_sound = asset_get("sfx_quick_dodge");
 //visual offsets for when you're in Ranno's bubble
 bubble_x = 0;
 bubble_y = 8;
+
+// spinhurt_threshold = 0.2;  // 设定每隔多少帧切换动画帧，值越小动画播放越快
+// spin_timer = 0;         // 初始化计时器
+
