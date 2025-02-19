@@ -4,7 +4,7 @@ set_attack_value(AT_DATTACK, AG_NUM_WINDOWS, 2);
 //set_attack_value(AT_DATTACK, AG_HURTBOX_SPRITE, sprite_get("dattack_hurt"));
 
 set_window_value(AT_DATTACK, 1, AG_WINDOW_TYPE, 1);
-set_window_value(AT_DATTACK, 1, AG_WINDOW_LENGTH, 20);
+set_window_value(AT_DATTACK, 1, AG_WINDOW_LENGTH, 30);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, 10);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_HSPEED, 3);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
@@ -13,7 +13,7 @@ set_window_value(AT_DATTACK, 1, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_SFX, asset_get("sfx_spin"));
 
 set_window_value(AT_DATTACK, 2, AG_WINDOW_TYPE, 1);
-set_window_value(AT_DATTACK, 2, AG_WINDOW_LENGTH, 25);
+set_window_value(AT_DATTACK, 2, AG_WINDOW_LENGTH, 20);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAMES, 7);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAME_START, 10);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_HSPEED_TYPE, 1);
@@ -27,7 +27,7 @@ set_num_hitboxes(AT_DATTACK, 1);
 set_hitbox_value(AT_DATTACK, 1, HG_PARENT_HITBOX, 1);
 set_hitbox_value(AT_DATTACK, 1, HG_HITBOX_TYPE, 1);
 set_hitbox_value(AT_DATTACK, 1, HG_WINDOW, 1);
-set_hitbox_value(AT_DATTACK, 1, HG_WINDOW_CREATION_FRAME, 6);
+set_hitbox_value(AT_DATTACK, 1, HG_WINDOW_CREATION_FRAME, 7);
 set_hitbox_value(AT_DATTACK, 1, HG_LIFETIME, 8);
 set_hitbox_value(AT_DATTACK, 1, HG_HITBOX_X, 31);
 set_hitbox_value(AT_DATTACK, 1, HG_HITBOX_Y, -46);
