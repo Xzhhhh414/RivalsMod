@@ -42,7 +42,7 @@ sprite_change_offset("nair", 98, 125);
 sprite_change_offset("fair", 98, 125);
 sprite_change_offset("bair", 98, 125);
 sprite_change_offset("uair", 98, 125);
-sprite_change_offset("dair", 98, 125);
+sprite_change_offset("dair", 98, 94);
 sprite_change_offset("fstrong", 98, 125);
 sprite_change_offset("ustrong", 98, 125);//temp,上攻击暂时替代
 sprite_change_offset("dstrong", 98, 125);
