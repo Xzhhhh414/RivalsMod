@@ -1,5 +1,8 @@
+//set_num_palettes(7);
+
+
 //DEFAULT COLOR (R,G,B)
-set_color_profile_slot(0, 0, 255, 255, 255); //SKIN
+set_color_profile_slot(0, 0, 229, 149, 219); //SKIN
 
 //COLOR RANGE (H,S,V)
 set_color_profile_slot_range(0, 4, 10, 41);
