@@ -77,12 +77,18 @@ if (attack == AT_FSPECIAL){
 	if (free==true){
 		attack=AT_FSPECIAL_AIR;
 	}
+	if (window ==3 && window_timer >=5 && has_hit ==true ){
+		if(jump_pressed == true){
+			set_state(PS_FIRST_JUMP);
+		}
+	}
 }
 
 if (attack == AT_FSPECIAL_AIR){
 	if (free==false){
 		attack=AT_FSPECIAL;
 	}
+	
 }
 
 if (attack == AT_USPECIAL){
