@@ -17,7 +17,7 @@ set_window_value(AT_FSTRONG, 2, AG_WINDOW_ANIM_FRAME_START, 6);
 set_window_value(AT_FSTRONG, 2, AG_WINDOW_HSPEED, 5);
 set_window_value(AT_FSTRONG, 2, AG_WINDOW_HSPEED_TYPE, 2);
 set_window_value(AT_FSTRONG, 2, AG_WINDOW_HAS_SFX, 1);
-set_window_value(AT_FSTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy1"));
+set_window_value(AT_FSTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_weak1"));
 //set_window_value(AT_FSTRONG, 2, AG_WINDOW_HAS_WHIFFLAG, 10);
 
 set_num_hitboxes(AT_FSTRONG,1);

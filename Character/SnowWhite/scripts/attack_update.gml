@@ -34,38 +34,65 @@ if (attack== AT_FSTRONG_2){
 }
 */
 if (attack== AT_UAIR){
-	if (window ==2 && window_timer >=18){
-		if(jump_pressed == true && (max_djumps-djumps)>0){
+	if (window ==2 ){
+		if(window_timer >=18 && jump_pressed == true && (max_djumps-djumps)>0){
 			set_state(PS_DOUBLE_JUMP);
 			//print_debug( "candjump");			
 			//print_debug( "max_djumps="+string(max_djumps));
 			//print_debug( "djumps="+string(djumps));
 		}
+		if(window_timer >=21  && is_special_pressed(DIR_UP)){
+			//print_debug( "can USPECIAL!!!!!!!!!!!!");	
+			attack_end();
+			attack = AT_USPECIAL;
+			window=0;
+			window_timer=0;			
+		}
 	}
 }
 
 if (attack== AT_NAIR){
-	if (window ==2 && window_timer >=15){
-		if(jump_pressed == true && (max_djumps-djumps)>0){
+	if (window ==2){
+		if(window_timer >=15 && jump_pressed == true && (max_djumps-djumps)>0){
 			set_state(PS_DOUBLE_JUMP);
+		}
+		if(window_timer >=18  && is_special_pressed(DIR_UP)){
+			attack_end();
+			attack = AT_USPECIAL;
+			window=0;
+			window_timer=0;			
 		}
 	}
 }
 
 if (attack== AT_BAIR){
-	if (window ==2 && window_timer >=20){
-		if(jump_pressed == true && (max_djumps-djumps)>0){
+	if (window ==2){
+		if(window_timer >=20 && jump_pressed == true && (max_djumps-djumps)>0){
 			set_state(PS_DOUBLE_JUMP);
 		}
+		if(window_timer >=23  && is_special_pressed(DIR_UP)){
+			attack_end();
+			attack = AT_USPECIAL;
+			window=0;
+			window_timer=0;			
+		}		
+		
 	}
 }
 
 if (attack== AT_DAIR){
-	if (window ==2 && window_timer >=15){
-		if(jump_pressed == true && (max_djumps-djumps)>0){
+	if (window ==2){
+		if(window_timer >=15 && jump_pressed == true && (max_djumps-djumps)>0){
 			set_state(PS_DOUBLE_JUMP);
 		}
+		if(window_timer >=18  && is_special_pressed(DIR_UP)){
+			attack_end();
+			attack = AT_USPECIAL;
+			window=0;
+			window_timer=0;			
+		}		
 	}
+	
 }
 
 if (attack == AT_NSPECIAL || attack == AT_NSPECIAL_AIR){

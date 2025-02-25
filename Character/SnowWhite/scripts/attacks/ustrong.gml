@@ -14,7 +14,7 @@ set_window_value(AT_USTRONG, 2, AG_WINDOW_ANIM_FRAMES, 3);
 set_window_value(AT_USTRONG, 2, AG_WINDOW_ANIM_FRAME_START, 2);
 //set_window_value(AT_USTRONG, 2, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
 set_window_value(AT_USTRONG, 2, AG_WINDOW_HAS_SFX, 1);
-set_window_value(AT_USTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy2"));
+set_window_value(AT_USTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_weak1"));
 
 set_window_value(AT_USTRONG, 3, AG_WINDOW_TYPE, 1);
 set_window_value(AT_USTRONG, 3, AG_WINDOW_LENGTH, 9);

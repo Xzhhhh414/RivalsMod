@@ -9,11 +9,11 @@ set_window_value(AT_DSTRONG, 1, AG_WINDOW_LENGTH, 15);
 set_window_value(AT_DSTRONG, 1, AG_WINDOW_ANIM_FRAMES, 5);
 
 set_window_value(AT_DSTRONG, 2, AG_WINDOW_TYPE, 1);
-set_window_value(AT_DSTRONG, 2, AG_WINDOW_LENGTH, 20);
+set_window_value(AT_DSTRONG, 2, AG_WINDOW_LENGTH, 17);
 set_window_value(AT_DSTRONG, 2, AG_WINDOW_ANIM_FRAMES, 5);
 set_window_value(AT_DSTRONG, 2, AG_WINDOW_ANIM_FRAME_START, 5);
 set_window_value(AT_DSTRONG, 2, AG_WINDOW_HAS_SFX, 1);
-set_window_value(AT_DSTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy1"));
+set_window_value(AT_DSTRONG, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_weak1"));
 
 set_window_value(AT_DSTRONG, 3, AG_WINDOW_TYPE, 1);
 set_window_value(AT_DSTRONG, 3, AG_WINDOW_LENGTH, 50);
